@@ -1,0 +1,6 @@
+name: PearlFix
+description: Fixes Ender Pearl glitching.
+version: 0.1
+author: timof121
+api-version: 1.8.8
+main: me.timof121.pearlfix.Main
