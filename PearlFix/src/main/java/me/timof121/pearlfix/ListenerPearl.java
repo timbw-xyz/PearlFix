@@ -13,15 +13,15 @@ public class ListenerPearl implements Listener {
     public void onPearl(org.bukkit.event.player.PlayerTeleportEvent e) {
         if (e.getCause() == org.bukkit.event.player.PlayerTeleportEvent.TeleportCause.ENDER_PEARL) {
             Location location = e.getTo();
-            location.setX(location.getBlockX() + 0.5D);
+            location.setX(location.getBlockX() + 0.25D);
             location.setY(location.getBlockY());
-            location.setZ(location.getBlockZ() + 0.5D);
+            location.setZ(location.getBlockZ() + 0.25D);
             e.setTo(location);
         }
         Location to = e.getTo();
         if (to.getBlock().getType() == Material.FENCE_GATE) {
             Player player = e.getPlayer();
-            player.sendMessage(ChatColor.RED + "(Server) Please don't pearl glitch!");
+            player.sendMessage(ChatColor.RED + "[!] Pearl glitching detected");
             e.setCancelled(true);
             e.getPlayer().getInventory().addItem(new org.bukkit.inventory.ItemStack(Material.ENDER_PEARL));
         }
