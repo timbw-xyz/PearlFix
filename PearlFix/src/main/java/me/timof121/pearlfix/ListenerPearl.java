@@ -11,7 +11,7 @@ public class ListenerPearl implements Listener {
 
     @EventHandler
     public void onPearl(org.bukkit.event.player.PlayerTeleportEvent e) {
-        if (e.getCause() == org.bukkit.event.player.PlayerTeleportEvent.TeleportCause.ENDER_PEARL) {
+        if (e.getCause() == org.bukkit.event.player.PlayerTeleportEvent.TeleportCause.ENDER_PEARL && e.getPlayer().getTicksLived() > 20) {
             Location location = e.getTo();
             location.setX(location.getBlockX() + 0.25D);
             location.setY(location.getBlockY());
