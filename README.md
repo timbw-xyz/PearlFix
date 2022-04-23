@@ -1,4 +1,4 @@
-# PearlGlitchFix
+# PearlFix
 Simple plugin made for TimBW HCF to fix pearling noclip exploit. It currently can prevent pearl glitching throught blocks, and fences like all servers! Basic features implemented, so you can use this in production.😃
 
 ## TODO:
