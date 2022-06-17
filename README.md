@@ -4,6 +4,9 @@ Simple plugin made for TimBW HCF to fix pearling noclip exploit. It currently ca
 ## TODO:
 - Config System (Custom not-permitted blocks, configurable messages...)
 
+## Showcase
+[Full Showcase](https://youtu.be/qCK0Wua0U6o)
+
 ## Without plugin:
 ![without-plugin](https://github.com/timof121/PearlGlitchFix/blob/main/readme/without_plugin.gif)
 
